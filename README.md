@@ -81,7 +81,7 @@ $ {Rar_abspath} a -r -cfg -sfx -z"SFXAutoInstaller.conf" Standalone.exe
 
 ### Components
 
-1. [Server API](#serverAPI "server-repo")
+1. [Server API](/ServerAPI)
 
 `$ pip install flask flask_cors && ./runserver.sh # Python2.7`
 
@@ -155,7 +155,7 @@ This will run `reverse_http.py` in a separate screen, then returns a IP:PORT (HT
 
 
 
-2. [Client/Trojan (__Android__)](#AndroidApp): The app is build using Cordova for its simplicity and support for cross-platform developpement. This app relays of two main parts
+2. [Client/Trojan (__Android__)](https://github.com/BenChaliah/Arbitrium-Android): The app is build using Cordova for its simplicity and support for cross-platform developpement. This app relays of two main parts
 
 
 	1. ##### __netbolt-orange-plugin__: 
@@ -228,6 +228,6 @@ This will run `reverse_http.py` in a separate screen, then returns a IP:PORT (HT
 
 
 
-3. [Client/Trojan (__Windows/Linux__)](#ClientApp): Unlike in the case of android here a simple python script will do. In addition, Windows version is equiped with a VBA script and SFX to make a silent autoinstaller, the trojan will be just a standalone executable that runs in the background after extracting its content inside %TEMP%.
+3. [Client/Trojan (__Windows/Linux__)](/Clients): Unlike in the case of android here a simple python script will do. In addition, Windows version is equiped with a VBA script and SFX to make a silent autoinstaller, the trojan will be just a standalone executable that runs in the background after extracting its content inside %TEMP%.
 
 
