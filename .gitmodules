@@ -1,0 +1,6 @@
+[submodule "WebApp"]
+	path = WebApp
+	url = https://github.com/BenChaliah/Arbitrium-WebApp.git
+[submodule "Clients/AndroidApp"]
+	path = Clients/AndroidApp
+	url = https://github.com/BenChaliah/Arbitrium-Android.git

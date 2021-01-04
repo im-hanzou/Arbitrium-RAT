@@ -1,0 +1,1 @@
+WScript.CreateObject("WScript.Shell").Run "runFrame.exe", 0, false
