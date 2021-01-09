@@ -50,7 +50,7 @@ Winrar (Windows only)
 
 ###  __Build__
 
-> :warning: run `sed` to set the server domain in all files
+> :warning: use `setAPI_FQDN.sh` first to set the server domain/IP in all files
 
 
 

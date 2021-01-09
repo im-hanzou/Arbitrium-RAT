@@ -6,6 +6,7 @@ cd $SCRIPTPATH
 
 
 value="{API_FQDN}"
+value_IP="{API_FQDN_IP}"
 
 
 for arg in "$@"
@@ -20,7 +21,8 @@ done
 
 if [ -e .API_FQDN.conf ]
 then
-    value=`cat .API_FQDN.conf` 
+    value=`cat .API_FQDN.conf`
+    value_IP=$(getent hosts $value | awk '{gsub(/\n/,"",$1); print $1; exit}')
 fi
 
 
@@ -30,6 +32,10 @@ then
     echo "No domain was provided. Usage: ./setAPI_FQDN.sh DOMAIN_OF_API_HOST_OR_IP"
 else
     echo "$value" > .API_FQDN.conf
+    resolvedDNS=$(getent hosts $1 | awk '{gsub(/\n/,"",$1); print $1; exit}')
     grep -rl "$value" . --exclude-dir=WebApp --exclude=*setAPI_FQDN.sh | xargs sed -i "s/$value/$1/g"
+    grep -rl "$value_IP" . --exclude-dir=WebApp --exclude=*setAPI_FQDN.sh | xargs sed -i "s/$value_IP/$resolvedDNS/g"
     echo "[!] Done"
 fi
+
+

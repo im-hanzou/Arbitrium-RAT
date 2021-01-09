@@ -21,7 +21,7 @@ if(window.localStorage.getItem("uuid")===null){
 
 
 function sfunc3(path){
-    window.MyOrangePlugin.poolexec(path+" 167.99.251.85 80 " + path.substring(1,path.length-9) + " " + deviceUUID, function(res){
+    window.MyOrangePlugin.poolexec(path+" {API_FQDN_IP} 80 " + path.substring(1,path.length-9) + " " + deviceUUID, function(res){
     	console.log(res);
     });
 }

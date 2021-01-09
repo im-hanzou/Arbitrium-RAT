@@ -125,7 +125,7 @@ class duplexHTTProx:
 
 if __name__ == '__main__':
 	threads_running_ = 0
-	self_hostIP = "167.99.251.85"
+	self_hostIP = "{API_FQDN_IP}"
 	obj_ = duplexHTTProx(sys.argv[1], sys.argv[2], "/data/data/net.orange.bolt/elf.out")
 	proxyInfo = "{}:{}".format(self_hostIP, obj_.lport)
 	requests.get("http://{API_FQDN}/pushproxy?hashid={}&token={}&proxyinfo={}".format(obj_.deviceuuid,\
