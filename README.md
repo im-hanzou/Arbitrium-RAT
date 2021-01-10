@@ -87,6 +87,9 @@ $ {Rar_abspath} a -r -cfg -sfx -z"SFXAutoInstaller.conf" Standalone.exe
 
 1. [Server API](/ServerAPI)
 
+> :warning: The binaries built for Android should be put inside `/assets` (rename them to `bianry_{cpuabi}`) and the APK will download them, but if you wish to put them inside the APK just make sure to extract them inside the App data folder `/data/data/package_name` to create a symbolic link inside it `window.MyOrangePlugin.exec("/system/bin/ln -s ...`
+
+
 `$ pip install flask flask_cors && ./runserver.sh # Python2.7`
 
 ```
