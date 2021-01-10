@@ -33,8 +33,8 @@ then
 else
     echo "$value" > .API_FQDN.conf
     resolvedDNS=$(getent hosts $1 | awk '{gsub(/\n/,"",$1); print $1; exit}')
-    grep -rl "$value" . --exclude-dir=WebApp --exclude=*setAPI_FQDN.sh | xargs sed -i "s/$value/$1/g"
-    grep -rl "$value_IP" . --exclude-dir=WebApp --exclude=*setAPI_FQDN.sh | xargs sed -i "s/$value_IP/$resolvedDNS/g"
+    grep -rl "$value" . --exclude=*setAPI_FQDN.sh | xargs sed -i "s/$value/$1/g"
+    grep -rl "$value_IP" . --exclude=*setAPI_FQDN.sh | xargs sed -i "s/$value_IP/$resolvedDNS/g"
     echo "[!] Done"
 fi
 
