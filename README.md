@@ -2,6 +2,10 @@
 
 Arbitrium is a cross-platform is a remote access trojan (RAT), Fully UnDetectable (FUD), It allows you to control Android, Windows and Linux and doesn't require any firewall exceptions or port forwarding. It gives access to the local networks, you can use the targets as a HTTP proxy and access Router, discover local IPs and scan their ports. Includes modules like Mimikatz, new modules can easily be added. In addition, if Arbitrium is used with a DNS spoofing software is can spread autonomously between devices (#AutoSpread). Arbitrium is a project of multiple parts, the parts were built using Java, JS, C, Python, Cordova and VueJS.
 
+#### Demo:
+
+[![Demo video](https://i.postimg.cc/TYfTGBb6/home.png)](https://youtu.be/7KlPPND2b0g)
+
 
 ### Features:
 
@@ -238,3 +242,10 @@ This will run `reverse_http.py` in a separate screen, then returns a IP:PORT (HT
 3. [Client/Trojan (__Windows/Linux__)](/Clients): Unlike in the case of android here a simple python script will do. In addition, Windows version is equiped with a VBA script and SFX to make a silent autoinstaller, the trojan will be just a standalone executable that runs in the background after extracting its content inside %TEMP%.
 
 
+#### Screenshots
+1. HTTP proxy:
+[![proxy.png](https://i.postimg.cc/QN6TWgJv/proxy.png)](https://postimg.cc/SjMsBM5G)
+2. Powershell:
+[![powershell.png](https://i.postimg.cc/hjB5TRc4/powershell.png)](https://postimg.cc/DWx63DSR)
+3. Port scanner:
+[![portscan.png](https://i.postimg.cc/J4ndbqVX/portscan.png)](https://postimg.cc/LhcTSjs4)
